@@ -1,5 +1,26 @@
+/*  == GLOBAL STYLES == */
 * {
   margin: 0; 
   padding: 0; 
   box-sizing: border-box;
+}
+:-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #8e9aaa;
+	border-radius: 2px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 4px;
+  height: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 0 6px #8e9aaa;
+	background-color: #555;
 }
