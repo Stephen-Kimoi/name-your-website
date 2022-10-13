@@ -1,11 +1,11 @@
 .app {
   background: linear-gradient(90deg, rgba(27,64,112,1) 0%, rgba(22,57,57,1) 98%);
-  /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);  */
   width: 100%; 
   height: 130vh; 
   padding: 2rem;
 } 
 
+/*  ===  HEADING COMPONENT STYLES ===   */
 .heading {
   width: 90%;
   height: fit-content; 
@@ -29,33 +29,45 @@
   padding: 0.5rem;
 }
 
+/* === APP FORM STYLES === */ 
+
 .app-form {
   display: flex; 
   align-items: center; 
   justify-content: center;
-  margin: 2rem;
-}
-
-.app-form label {
-  color: antiquewhite;
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0.7rem;
-  text-align: center;
 }
 
 .app-form input {
   border: none;
   border-radius: 7px;
-  height: 1.5rem;
+  height: 2rem;
   text-align: center;
 }
 
+.button-clean {
+  height: 2.5rem;
+  margin: 2rem;
+  padding: 0.5rem;
+  width: 6rem;
+  color: #fff;
+  background: rgb(128, 124, 124, 0.6);
+  border: none;
+  border-radius: 10px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+}
+
+@media all and (max-width: 480px) { 
+  .app-form {
+    padding-left: 30px;
+  }
+}
+
 .displayed-names {
-  width: 70%;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-  grid-gap: 4rem;
-  width: 100%;  */
+  width: 90%;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

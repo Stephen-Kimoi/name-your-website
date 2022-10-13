@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css'
 import name from '@rstacruz/startup-name-generator'; 
 import Heading from './components/Heading';
+import AppForm from './components/AppForm';
 
 function App() {
   const [inputName, setInputName] = useState(""); 
@@ -32,10 +33,8 @@ function App() {
 
       <Heading inputActive={inputActive} />
 
-      <form className='app-form'>
-        <input type="text" placeholder="Proposed name" onChange={handleChange} onFocus={ () => setInputActive(true)}/> 
-        <button className='button-clean' onClick={handleButtonClean}>Clean</button>
-      </form>
+      <AppForm handleChange={handleChange} setInputActive={setInputActive} handleButtonClean={handleButtonClean} /> 
+      
 
       {
         displayNames.length !== 0 && (
