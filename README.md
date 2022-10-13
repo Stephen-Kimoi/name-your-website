@@ -8,6 +8,9 @@ Enjoy!
 # UI 
 ![Name your website](./NameUI.png); 
 
+# LIVE SITE LINK 
+You can intercat with the web app over [here](https://name-your-website.netlify.app/)
+
 # CONTRIBUTORS 
 [Stephen Kimoi](https://kimoisteve.me) 
 
