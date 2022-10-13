@@ -3,6 +3,7 @@ import './App.css'
 import name from '@rstacruz/startup-name-generator'; 
 import Heading from './components/Heading';
 import AppForm from './components/AppForm';
+import DisplayNames from './components/DisplayNames';
 
 function App() {
   const [inputName, setInputName] = useState(""); 
@@ -35,27 +36,11 @@ function App() {
 
       <AppForm handleChange={handleChange} setInputActive={setInputActive} handleButtonClean={handleButtonClean} /> 
       
-
       {
         displayNames.length !== 0 && (
-            <div className='displayed-names'>
-                {
-                  displayNames.map( name => {
-                    return (
-                      <div key={name} className="single-name"> 
-                        <a
-                          href={`https://www.namecheap.com/domains/registration/results/?domain=${name}`}
-                          target="_blank"
-                        >
-                          { name }
-                        </a>
-                      </div>
-                    )
-                  })
-                }
-            </div>
+            <DisplayNames displayNames={displayNames} /> 
         )
-      }
+      } 
 
     </div>
   )
