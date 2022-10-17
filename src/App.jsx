@@ -18,7 +18,7 @@ function App() {
   }
 
   const handleButtonClean = (e) => {
-    window.location.reload()
+    window.location.reload(); 
   }
 
   useEffect( () => {
