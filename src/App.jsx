@@ -18,6 +18,8 @@ function App() {
   }
 
   const handleButtonClean = (e) => {
+    window.location.reload()
+    e.target.value = ''; 
     e.preventDefault(); 
     setInputName("");
     setDisplayNames([]);
@@ -25,7 +27,7 @@ function App() {
   }
 
   useEffect( () => {
-    setDisplayNames(suggestedNames.slice(0,25)); 
+    setDisplayNames(suggestedNames.slice(0,50)); 
   }, [inputName]); 
 
 

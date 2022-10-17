@@ -7,7 +7,7 @@ const Heading = ({ inputActive }) => {
           {
             !inputActive && (
               <p>
-                Input your preferred website name and get over 20+ suggestions<br/>
+                Enter your preferred website name and get over 50+ suggestions<br/>
                 Click on your preferred name and get to see available domain names
               </p>
             )
