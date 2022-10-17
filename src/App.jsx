@@ -19,11 +19,6 @@ function App() {
 
   const handleButtonClean = (e) => {
     window.location.reload()
-    e.target.value = ''; 
-    e.preventDefault(); 
-    setInputName("");
-    setDisplayNames([]);
-    setInputActive(false); 
   }
 
   useEffect( () => {
